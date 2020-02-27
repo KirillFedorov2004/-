@@ -1,0 +1,42 @@
+#1_задание
+from random import*
+for i in range(10):
+    a = randint(100,200)
+    print(a, end=' ')
+#2_задание
+from random import*
+a = int(input("Введите диапазон от:\n"))
+b = int(input("Введите диапазон до:\n"))
+s = 0
+for i in range(10):
+	c = randint(a,b)
+	s+=c
+	print(s)
+#3_задание
+from random import*
+for i in range(20):
+        a = randint(100,999)
+        b= a % 10
+        if b==3:
+                print('Оканчивается на 3:',a)
+        else:
+                print(a)
+#4_задание
+from random import*
+for i in range(20):
+        a = randint(100,999)
+        b= a % 10
+        if b>=5:
+                print('больше или равно 5:',a)
+        else:
+                print(a)
+#5_задание
+from random import*
+a = 0
+for i in range(10):
+    b=randint(100,999)
+    if b>a:
+        a=b
+        print(a)
+
+
